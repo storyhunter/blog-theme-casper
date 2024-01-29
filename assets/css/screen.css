@@ -1748,6 +1748,7 @@ iframe.instagram-media + script + :not([id]) {
 }
 
 .article-byline-meta .author-name {
+    color: #15171a;
     margin: 0 0 6px;
     font-size: 1.7rem;
     font-weight: 700;
