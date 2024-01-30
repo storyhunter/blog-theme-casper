@@ -3035,3 +3035,23 @@ file to add some of your own styles. Well, you've come to
 the right place. Onward!
 
  */
+
+.share-block {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: min(24px, 5.6vmin) 0 0;
+}
+
+.share-block a {
+    transition: transform 0.3s;
+}
+
+.share-block a:hover {
+    transform: scale(1.1);
+}
+
+.share-block svg {
+    color: var(--color-darkgrey);
+    display: block;
+}

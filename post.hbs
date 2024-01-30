@@ -59,6 +59,8 @@ into the {body} tag of the default.hbs template --}}
         </section>
         </div>
 
+        {{> "share-block"}}
+
         {{#match @custom.post_image_style "!=" "Hidden"}}
         {{#if feature_image}}
             <figure class="article-image">
