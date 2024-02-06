@@ -67,24 +67,13 @@ into the {body} tag of the default.hbs template --}}
 </article>
 </main>
 
-{{!-- A signup call to action is displayed here, unless viewed as a logged-in member --}}
-{{#if @site.members_enabled}}
-{{#unless @member}}
-{{#unless @site.comments_enabled}}
-{{#if access}}
-    <section class="footer-cta outer">
-        <div class="inner">
-            {{#if @custom.email_signup_text}}<h2 class="footer-cta-title">{{@custom.email_signup_text}}</h2>{{/if}}
-            <a class="footer-cta-button" href="#/portal" data-portal>
-                <div class="footer-cta-input">Enter your email</div>
-                <span>Subscribe</span>
-            </a>
-        </div>
-    </section>
-{{/if}}
-{{/unless}}
-{{/unless}}
-{{/if}}
+<section class="footer-cta outer">
+    <div class="inner">
+        {{#if @custom.email_signup_text}}<h2 class="footer-cta-title">{{@custom.email_signup_text}}</h2>{{/if}}
+        <a class="footer-cta-button" href="/get-started/">Get Started</a>
+        <p class="footer-cta-signin">Already a member? <a href="/signin">Sign in</a></p>
+    </div>
+</section>
 
 
 {{!-- Read more links, just above the footer --}}
